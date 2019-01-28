@@ -43,12 +43,37 @@
 </head>
 
 <body>
-    <div class="app">
+    <!-- <div class="app">
         <h1>PhoneGap</h1>
         <div id="deviceready" class="blink">
             <p class="event listening">Connecting to Device</p>
             <p class="event received">Ashwin is Ready</p>
         </div>
+    </div> -->
+    <div data-role="page" id="home">
+ 
+      <div data-role="header">
+
+        <h1>Home</h1>
+
+        <div data-role="navbar">
+          <ul>
+            <li><a href="#home" data-transition="none" data-icon="home">Home</a></li>
+            <li><a href="#startTracking" data-transition="none" data-icon="plus">Track Workout</a></li>
+            <li><a href="#history" data-transition="none" data-icon="star">History</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div data-role="content">
+        <p>Welcome to the <em>ExerciseTracker</em> app. By clicking <em>Track Workout</em> you can record your workouts using the GPS feature on your phone. Learn how to build this app by reading <em>mobile.tutsplus.com</em>.</p>
+
+        <button id="home_network_button" data-icon="check">Internet Access Enabled</button>
+        <button id="home_clearstorage_button">Clear local storage</button>
+        <button id="home_seedgps_button">Load Seed GPS Data</button>
+      </div>
+ 
+ 
     </div>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
